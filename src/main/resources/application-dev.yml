@@ -27,5 +27,5 @@ springdoc:
   swagger-ui:
     path: ${SWAGGER_UI_PATH}
     urls[0]:
-      name: devops_main
+      name: devops-main
       url: ${MAIN_SWAGGER_PATH}
