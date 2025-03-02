@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: devops-api-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns: # 모든 도메인 허용
+              - "*"
+            allowedMethods:
+              - GET
+              - POST
+            allowedHeaders: "*"
+            allowCredentials: true
+      routes:
+        - id: hello-route-non-auth
+          uri: ${MAIN_ROUTE_ADDRESS}
+          predicates:
+            - Path=/hello/**
+        - id: redis-route-non-auth
+          uri: ${MAIN_ROUTE_ADDRESS}
+          predicates:
+            - Path=/redis/**
+
+springdoc:
+  swagger-ui:
+    path: ${SWAGGER_UI_ADDRESS}
+    urls[0]:
+      name: devops_main
+      url: ${MAIN_SWAGGER_URL}
