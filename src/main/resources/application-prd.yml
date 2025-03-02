@@ -22,10 +22,3 @@ spring:
           uri: ${MAIN_ROUTE_ADDRESS}
           predicates:
             - Path=/redis/**
-
-springdoc:
-  swagger-ui:
-    path: ${SWAGGER_UI_ADDRESS}
-    urls[0]:
-      name: devops_main
-      url: ${MAIN_SWAGGER_URL}
