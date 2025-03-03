@@ -8,6 +8,7 @@ spring:
           '[/**]':
             allowedOrigins: # 모든 도메인 허용
               - ${DOMAIN_URL}
+              - ${API_GATEWAY_URL2}
             allowedMethods:
               - GET
               - POST
