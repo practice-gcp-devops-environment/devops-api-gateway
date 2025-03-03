@@ -11,6 +11,7 @@ spring:
               - ${API_GATEWAY_URL2}
               - ${API_GATEWAY_URL4}
               - ${API_GATEWAY_URL5}
+              - ${API_GATEWAY_URL6}
             allowedMethods:
               - GET
               - POST
