@@ -9,6 +9,8 @@ spring:
             allowedOrigins: # 모든 도메인 허용
               - ${DOMAIN_URL}
               - ${API_GATEWAY_URL2}
+              - ${API_GATEWAY_URL4}
+              - ${API_GATEWAY_URL5}
             allowedMethods:
               - GET
               - POST
