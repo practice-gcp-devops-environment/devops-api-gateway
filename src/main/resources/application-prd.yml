@@ -6,12 +6,17 @@ spring:
       globalcors:
         cors-configurations:
           '[/**]':
-            allowedOrigins: # 모든 도메인 허용
+            allowedOrigins:
               - ${DOMAIN_URL}
+              - ${API_GATEWAY_URL}
               - ${API_GATEWAY_URL2}
+              - ${API_GATEWAY_URL3}
               - ${API_GATEWAY_URL4}
               - ${API_GATEWAY_URL5}
               - ${API_GATEWAY_URL6}
+              - ${API_GATEWAY_URL7}
+              - ${API_GATEWAY_URL8}
+              - ${API_GATEWAY_URL9}
             allowedMethods:
               - GET
               - POST
