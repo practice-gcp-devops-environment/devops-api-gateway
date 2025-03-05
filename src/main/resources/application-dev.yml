@@ -41,6 +41,10 @@ spring:
               - DELETE
               - OPTIONS
       routes:
+        - id: main-swagger-api-docs
+          uri: ${MAIN_ROUTE_ADDRESS}
+          predicates:
+            - Path=/devops-main/v3/api-docs
         - id: hello-route-non-auth
           uri: ${MAIN_ROUTE_ADDRESS}
           predicates:
