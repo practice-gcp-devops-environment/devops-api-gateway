@@ -53,6 +53,10 @@ spring:
           uri: ${MAIN_ROUTE_ADDRESS}
           predicates:
             - Path=/redis/**
+        - id: flask-route-non-auth
+          uri: ${FLASK_ROUTE_ADDRESS}
+          predicates:
+            - Path=/flask/**
 
 springdoc:
   swagger-ui:
