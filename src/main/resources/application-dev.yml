@@ -10,6 +10,7 @@ spring:
           '[/**]':
             allowedOrigins:
               - ${DOMAIN_URL}
+              - ${FRONT_URL}
               - ${API_GATEWAY_URL}
               - ${API_GATEWAY_URL2}
               - ${API_GATEWAY_URL3}
